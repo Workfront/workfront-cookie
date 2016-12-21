@@ -1,0 +1,56 @@
+{
+  "name": "workfront-cookie",
+  "version": "0.0.0",
+  "description": "Extracts values from workfront cookies",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "lint": "eslint --ext .js .",
+    "test:lint": "npm run lint",
+    "test:sources": "karma start karma.conf.js",
+    "test:typings": "./node_modules/.bin/_mocha -- test/typings.spec.js",
+    "test": "run-p test:*",
+    "coverage": "cat coverage/*/lcov.info | codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Workfront/workfront-cookie.git"
+  },
+  "keywords": [
+    "Workfront",
+    "AtTask",
+    "session",
+    "cookie"
+  ],
+  "author": "Workfront",
+  "contributors": [
+    "Hovhannes Babayan <bhovhannes@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Workfront/workfront-cookie/issues"
+  },
+  "homepage": "https://github.com/Workfront/workfront-cookie#readme",
+  "devDependencies": {
+    "codecov": "1.0.1",
+    "eslint": "3.12.1",
+    "eslint-loader": "1.6.1",
+    "expect.js": "0.3.1",
+    "istanbul-instrumenter-loader": "1.1.0",
+    "karma": "1.3.0",
+    "karma-cli": "1.0.1",
+    "karma-coverage": "1.1.1",
+    "karma-mocha": "1.3.0",
+    "karma-phantomjs-launcher": "1.0.2",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "1.8.0",
+    "mocha": "3.2.0",
+    "npm-run-all": "3.1.2",
+    "phantomjs-prebuilt": "2.1.14",
+    "typescript": "2.1.4",
+    "typescript-definition-tester": "0.0.5",
+    "webpack": "1.14.0"
+  }
+}
