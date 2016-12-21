@@ -7,7 +7,7 @@ function getBaseWebpackConfig() {
         context: __dirname,
         output: {
             libraryTarget: 'umd',
-            library: 'additween',
+            library: 'WorkfrontCookie',
             path: path.join(__dirname, 'dist'),
             filename: '[name].js',
             devtoolModuleFilenameTemplate: 'workfront-cookie:///[resource-path]'
