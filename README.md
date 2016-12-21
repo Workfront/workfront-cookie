@@ -3,6 +3,32 @@
 
 Provides methods for extracting values from workfront cookies.
 
+## Installation
+
+Via NPM:
+
+`npm i workfront-cookie --save-dev`
+
+Package provides UMD bundle, so you can also include it to your page using `<script>` tag.
+
+In that case a global variable called `WorkfrontCookie` will be created.  
+
+
+## API
+
+Bundle exposes an object with the following items:
+
+#### COOKIE_NAME: string
+
+A constant string representing name of the Workfront cookie.
+
+#### getSessionID(): undefined | string
+
+Returns Workfront session ID currently stored in the cookie.
+
+If for some reason it is impossible to determine session ID, this method will return `undefined`.
+
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
