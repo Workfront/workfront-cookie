@@ -28,6 +28,9 @@ Returns Workfront session ID currently stored in the cookie.
 
 If for some reason it is impossible to determine session ID, this method will return `undefined`.
 
+#### readCookie(name: string): undefined | string
+
+Returns value for the given key stored in cookie.
 
 ## License
 

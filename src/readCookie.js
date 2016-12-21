@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 
-var readCookie = require('./readCookie')
-
-function getSessionID() {
-    var cookie = readCookie('attask')
-    if (cookie) {
-        return cookie.split('#')[0]
+/* globals document */
+function readCookie(name) {
+    var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'))
+    if (match) {
+        return decodeURIComponent(match[3])
     }
 }
 
-module.exports = getSessionID
+module.exports = readCookie

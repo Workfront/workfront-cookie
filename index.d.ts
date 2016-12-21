@@ -4,6 +4,8 @@
 
 export as namespace WorkfrontCookie
 
+export const COOKIE_NAME: string
+
 export function getSessionID(): string | undefined
 
-export const COOKIE_NAME: string
+export function readCookie(name: string): string | undefined

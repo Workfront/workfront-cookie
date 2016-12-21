@@ -1,8 +1,9 @@
 /// <reference path="../../index.d.ts" />
 
-import { getSessionID, COOKIE_NAME } from '../../index'
+import { COOKIE_NAME, getSessionID, readCookie } from '../../index'
 
 export {
+    COOKIE_NAME,
     getSessionID,
-    COOKIE_NAME
+    readCookie
 }
