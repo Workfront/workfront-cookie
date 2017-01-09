@@ -22,15 +22,19 @@ Bundle exposes an object with the following items:
 
 A constant string representing name of the Workfront cookie.
 
-#### getSessionID(): undefined | string
+#### getSessionID(cookieString?: string): undefined | string
 
 Returns Workfront session ID currently stored in the cookie.
 
+It case the second argument is specified, value will be extracted from that string instead of using `document.cookie`. 
+
 If for some reason it is impossible to determine session ID, this method will return `undefined`.
 
-#### readCookie(name: string): undefined | string
+#### readCookie(name: string, cookieString?: string): undefined | string
 
-Returns value for the given key stored in cookie.
+Returns value for the given key (`name`) stored in cookie.
+
+It case the second argument is specified, value will be extracted from that string instead of using `document.cookie`.
 
 ## License
 

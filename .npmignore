@@ -7,6 +7,5 @@
 coverage/
 getBaseWebpackConfig.js
 karma.conf.js
-src/
 test/
 webpack.config.js

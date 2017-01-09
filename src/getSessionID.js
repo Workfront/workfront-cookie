@@ -15,9 +15,10 @@
  */
 
 var readCookie = require('./readCookie')
+var cookieName = require('./cookieName')
 
-function getSessionID() {
-    var cookie = readCookie('attask')
+function getSessionID(cookieString) {
+    var cookie = readCookie(cookieName, cookieString)
     if (cookie) {
         return cookie.split('#')[0]
     }

@@ -15,8 +15,9 @@
  */
 
 /* globals document */
-function readCookie(name) {
-    var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'))
+function readCookie(name, cookieString) {
+    cookieString = cookieString || document.cookie
+    var match = cookieString.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'))
     if (match) {
         return decodeURIComponent(match[3])
     }
