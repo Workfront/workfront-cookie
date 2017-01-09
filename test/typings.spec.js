@@ -13,5 +13,5 @@ describe('workfront-cookie typings', function() {
             },
             done
         )
-    })
+    }, 10000)
 })
