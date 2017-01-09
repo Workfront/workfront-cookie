@@ -1,6 +1,13 @@
-webpack.config.js
-getBaseWebpackConfig.js
-karma.conf.js
+.editorconfig
+.eslintignore
+.eslintrc
+.idea/
+.npmignore
+.travis.yml
 coverage/
+getBaseWebpackConfig.js
+index.js
+karma.conf.js
 src/
 test/
+webpack.config.js
