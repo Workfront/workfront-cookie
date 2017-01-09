@@ -2,7 +2,7 @@
   "name": "workfront-cookie",
   "version": "2.0.0",
   "description": "Extracts values from workfront cookies",
-  "main": "index.js",
+  "main": "dist/workfront-cookie.min.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "webpack",
