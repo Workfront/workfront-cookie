@@ -6,7 +6,6 @@
 .travis.yml
 coverage/
 getBaseWebpackConfig.js
-index.js
 karma.conf.js
 src/
 test/
