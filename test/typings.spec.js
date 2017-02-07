@@ -6,6 +6,7 @@ var tt = require('typescript-definition-tester')
 
 describe('workfront-cookie typings', function() {
     it('should compile examples successfully against workfront-cookie.d.ts', function(done) {
+        this.timeout(10000)
         tt.compileDirectory(
             path.join(__dirname, '/typings-test-fixtures'),
             function(fileName) {
@@ -13,5 +14,5 @@ describe('workfront-cookie typings', function() {
             },
             done
         )
-    }, 10000)
+    })
 })
