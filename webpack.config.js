@@ -5,7 +5,8 @@ var getBaseWebpackConfig = require('./getBaseWebpackConfig')
 
 var minifiedConfig = getBaseWebpackConfig()
 minifiedConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    minimize: true
+    minimize: true,
+    sourceMap: true
 }))
 minifiedConfig.entry = {
     'workfront-cookie.min': './index'
