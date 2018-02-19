@@ -8,4 +8,6 @@ export const COOKIE_NAME: string
 
 export function getSessionID(cookieString?: string): string | undefined
 
+export function getXSRFToken(cookieString?: string): string | undefined
+
 export function readCookie(name: string, cookieString?: string): string | undefined
