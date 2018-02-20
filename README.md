@@ -28,9 +28,17 @@ A constant string representing name of the Workfront cookie.
 
 Returns Workfront session ID currently stored in the cookie.
 
-It case the second argument is specified, value will be extracted from that string instead of using `document.cookie`. 
+In case the second argument is specified, value will be extracted from that string instead of using `document.cookie`. 
 
 If for some reason it is impossible to determine session ID, this method will return `undefined`.
+
+#### getXSRFToken(cookieString?: string): undefined | string
+
+Returns Workfront XSRF token currently stored in the cookie. Eventually, this token will replace sessionID.
+
+In case the second argument is specified, value will be extracted from that string instead of using `document.cookie`. 
+
+If for some reason it is impossible to determine XSRF token, this method will return `undefined`.
 
 #### readCookie(name: string, cookieString?: string): undefined | string
 
