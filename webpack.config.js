@@ -1,21 +1,17 @@
 /* eslint-env node */
-var webpack = require('webpack')
-
 var getBaseWebpackConfig = require('./getBaseWebpackConfig')
 
 var minifiedConfig = getBaseWebpackConfig()
-minifiedConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    minimize: true,
-    sourceMap: true
-}))
 minifiedConfig.entry = {
     'workfront-cookie.min': './index'
 }
+minifiedConfig.mode = 'production'
 
 var unminifiedConfig = getBaseWebpackConfig()
 unminifiedConfig.entry = {
     'workfront-cookie': './index'
 }
+unminifiedConfig.mode = 'development'
 
 module.exports = [
     minifiedConfig,
