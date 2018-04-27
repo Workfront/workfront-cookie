@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/Workfront/workfront-cookie#readme",
   "devDependencies": {
-    "codecov": "3.0.0",
+    "codecov": "3.0.1",
     "eslint": "4.19.1",
     "eslint-loader": "2.0.0",
     "expect.js": "0.3.1",
