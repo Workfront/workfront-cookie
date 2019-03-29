@@ -14,10 +14,4 @@
  * limitations under the License.
  */
 
-var readCookie = require('./readCookie')
-
-function getXSRFToken(cookieString) {
-    return readCookie('XSRF-TOKEN', cookieString) || undefined
-}
-
-module.exports = getXSRFToken
+export const COOKIE_NAME = 'attask'

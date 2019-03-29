@@ -14,13 +14,12 @@
  * limitations under the License.
  */
 
-/* globals document */
-function readCookie(name, cookieString) {
-    cookieString = cookieString || document.cookie
-    var match = cookieString.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'))
-    if (match) {
-        return decodeURIComponent(match[3])
-    }
-}
+import { readCookie } from './readCookie'
+import { COOKIE_NAME } from './cookieName'
 
-module.exports = readCookie
+export function getSessionID(cookieString?: string): string | undefined {
+  const cookie = readCookie(COOKIE_NAME, cookieString)
+  if (cookie) {
+    return cookie.split('#')[0]
+  }
+}
