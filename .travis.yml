@@ -8,8 +8,10 @@ notifications:
     on_success: change
 
 node_js:
-  - "8"
-  - "lts/*"
+  - 'node'
+  - 'lts/*'
+
+before_script: npm run build
 
 env:
   - CXX=g++-4.8

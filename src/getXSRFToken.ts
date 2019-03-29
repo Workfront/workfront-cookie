@@ -14,4 +14,8 @@
  * limitations under the License.
  */
 
-module.exports = 'attask'
+import { readCookie } from './readCookie'
+
+export function getXSRFToken(cookieString?: string): string | undefined {
+  return readCookie('XSRF-TOKEN', cookieString) || undefined
+}
