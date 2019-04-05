@@ -1,6 +1,5 @@
 # workfront-cookie
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Workfront/workfront-cookie.svg)](https://greenkeeper.io/)
 [![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Dependencies][deps-image]][deps-url] [![Dev. Dependencies][dev-deps-image]][dev-deps-url] [![MIT License][license-image]][license-url] [![Build Status][travis-image]][travis-url] [![Coverage][codecov-image]][codecov-url]
 
 Provides methods for extracting values from workfront cookies.
