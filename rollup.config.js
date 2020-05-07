@@ -1,18 +1,44 @@
-import rollupTypescript from 'rollup-plugin-typescript'
+import typescript from '@rollup/plugin-typescript'
+import { terser } from 'rollup-plugin-terser'
 
-export default {
-  input: 'src/index.ts',
-  output: [
-    {
-      file: './dist/workfront-cookie.js',
-      format: 'umd',
-      name: 'WorkfrontCookie',
-      sourcemap: true
-    },
-    {
-      file: './dist/workfront-cookie.esm.js',
-      format: 'esm'
-    }
-  ],
-  plugins: [rollupTypescript()]
-}
+export default [
+  {
+    input: 'src/index.ts',
+    output: [
+      {
+        file: './dist/workfront-cookie.js',
+        format: 'umd',
+        name: 'WorkfrontCookie',
+        sourcemap: true,
+      },
+    ],
+    plugins: [typescript()],
+  },
+  {
+    input: 'src/index.ts',
+    output: [
+      {
+        file: './dist/workfront-cookie.min.js',
+        format: 'umd',
+        name: 'WorkfrontCookie',
+        sourcemap: true,
+      },
+    ],
+    plugins: [typescript(), terser()],
+  },
+  {
+    input: 'src/index.ts',
+    output: [
+      {
+        file: './dist/workfront-cookie.esm.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
+    plugins: [
+      typescript({
+        module: 'es6',
+      }),
+    ],
+  },
+]
