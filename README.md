@@ -48,16 +48,16 @@ It case the second argument is specified, value will be extracted from that stri
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
 
-[deps-image]: https://img.shields.io/david/Workfront/workfront-cookie.svg
+[deps-image]: https://img.shields.io/david/Workfront/workfront-cookie.svg?style=flat-square
 [deps-url]: https://david-dm.org/Workfront/workfront-cookie
-[dev-deps-image]: https://img.shields.io/david/dev/Workfront/workfront-cookie.svg
+[dev-deps-image]: https://img.shields.io/david/dev/Workfront/workfront-cookie.svg?style=flat-square
 [dev-deps-url]: https://david-dm.org/Workfront/workfront-cookie#info=devDependencies
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: LICENSE
 [npm-url]: https://www.npmjs.org/package/workfront-cookie
-[npm-version-image]: https://img.shields.io/npm/v/workfront-cookie.svg?style=flat
-[npm-downloads-image]: https://img.shields.io/npm/dm/workfront-cookie.svg?style=flat
+[npm-version-image]: https://img.shields.io/npm/v/workfront-cookie.svg?style=flat-square
+[npm-downloads-image]: https://img.shields.io/npm/dm/workfront-cookie.svg?style=flat-square
 [travis-url]: https://travis-ci.org/Workfront/workfront-cookie
-[travis-image]: https://img.shields.io/travis/Workfront/workfront-cookie.svg?style=flat
+[travis-image]: https://img.shields.io/travis/Workfront/workfront-cookie.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/Workfront/workfront-cookie
-[codecov-image]: https://img.shields.io/codecov/c/github/Workfront/workfront-cookie.svg
+[codecov-image]: https://img.shields.io/codecov/c/github/Workfront/workfront-cookie.svg?style=flat-square
