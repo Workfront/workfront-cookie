@@ -1,8 +1,13 @@
 {
   "extends": ["config:base"],
-  "schedule": ["before 3am every weekend"],
+  "stabilityDays": 3,
+  "prCreation": "not-pending"
   "automerge": true,
+  "separateMinorPatch": true,
   "major": {
+    "automerge": false
+  },
+  "minor": {
     "automerge": false
   }
 }
