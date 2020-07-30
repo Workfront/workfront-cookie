@@ -19,6 +19,7 @@
     "test:sources": "jest --coverage",
     "test:sources:watch": "jest --watch",
     "test": "run-p test:*",
+    "prepublishOnly": "yarn build",
     "coverage": "cat coverage/*/lcov.info | codecov"
   },
   "repository": {
