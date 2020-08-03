@@ -45,7 +45,7 @@
     "@commitlint/cli": "9.1.1",
     "@commitlint/config-conventional": "9.1.1",
     "@rollup/plugin-typescript": "5.0.2",
-    "@types/jest": "26.0.7",
+    "@types/jest": "26.0.8",
     "codecov": "3.7.2",
     "husky": "4.2.5",
     "jest": "26.1.0",
