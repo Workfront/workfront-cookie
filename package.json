@@ -42,8 +42,8 @@
   },
   "homepage": "https://github.com/Workfront/workfront-cookie#readme",
   "devDependencies": {
-    "@commitlint/cli": "9.1.1",
-    "@commitlint/config-conventional": "9.1.1",
+    "@commitlint/cli": "9.1.2",
+    "@commitlint/config-conventional": "9.1.2",
     "@rollup/plugin-typescript": "5.0.2",
     "@types/jest": "26.0.9",
     "codecov": "3.7.2",
