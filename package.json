@@ -44,7 +44,7 @@
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@rollup/plugin-typescript": "8.0.0",
+    "@rollup/plugin-typescript": "8.1.0",
     "@types/jest": "26.0.19",
     "codecov": "3.8.1",
     "husky": "4.3.6",
