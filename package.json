@@ -19,8 +19,7 @@
     "test:sources": "jest --coverage",
     "test:sources:watch": "jest --watch",
     "test": "run-p test:*",
-    "prepublishOnly": "yarn build",
-    "coverage": "cat coverage/*/lcov.info | codecov"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -42,14 +41,12 @@
   },
   "homepage": "https://github.com/Workfront/workfront-cookie#readme",
   "devDependencies": {
+    "@arkweid/lefthook": "0.7.2",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "@rollup/plugin-typescript": "8.2.0",
     "@types/jest": "26.0.20",
-    "codecov": "3.8.1",
-    "husky": "4.3.8",
     "jest": "26.6.3",
-    "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "rollup": "2.39.0",
