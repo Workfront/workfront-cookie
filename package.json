@@ -42,8 +42,8 @@
   "homepage": "https://github.com/Workfront/workfront-cookie#readme",
   "devDependencies": {
     "@arkweid/lefthook": "0.7.6",
-    "@commitlint/cli": "13.1.0",
-    "@commitlint/config-conventional": "13.1.0",
+    "@commitlint/cli": "13.2.0",
+    "@commitlint/config-conventional": "13.2.0",
     "@rollup/plugin-typescript": "8.2.5",
     "@types/jest": "27.0.2",
     "jest": "27.2.1",
