@@ -9,5 +9,13 @@
   },
   "minor": {
     "automerge": false
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["jest", "ts-jest", "jest-environment-jsdom", "@types/jest"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "jest_ts",
+      "groupSlug": "jest_ts"
+    }
+  ]
 }
