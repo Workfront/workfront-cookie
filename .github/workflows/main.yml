@@ -23,5 +23,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npm run test:typecheck
