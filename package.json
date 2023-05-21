@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/Workfront/workfront-cookie#readme",
   "devDependencies": {
-    "@evilmartians/lefthook": "1.3.13",
+    "@evilmartians/lefthook": "1.4.0",
     "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.3",
     "@rollup/plugin-typescript": "11.1.1",
