@@ -12,6 +12,24 @@
   },
   "packageRules": [
     {
+      "matchPackagePrefixes": ["@evilmartians/lefthook", "@commitlint/*"],
+      "labels": ["commit-related tools"],
+      "separateMinorPatch": false,
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "extends": ["packages:linters"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "matchPackageNames": ["prettier"],
+      "separateMinorPatch": false,
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "matchPackageNames": ["jest", "ts-jest", "jest-environment-jsdom", "@types/jest"],
       "matchUpdateTypes": ["major"],
       "groupName": "jest_ts",
