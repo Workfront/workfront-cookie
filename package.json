@@ -1,6 +1,6 @@
 {
   "name": "@workfront/cookie",
-  "version": "3.4.5",
+  "version": "4.0.0",
   "description": "Extracts values from workfront cookies",
   "main": "dist/workfront-cookie.js",
   "module": "dist/workfront-cookie.esm.js",
