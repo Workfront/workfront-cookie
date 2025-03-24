@@ -36,7 +36,7 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
           scope: '@workfront'
-      - run: npm ci
+      - run: npm ci --no-fund --no-audit
       - name: Bump package version
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -52,7 +52,7 @@ jobs:
       - name: Draft release
         run: |
           VERSION=$(node -p "require('./package.json').version")
-          gh release create $VERSION --generate-notes --draft
+          gh release create v$VERSION --generate-notes --draft --verify-tag --fail-on-no-commits
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ inputs.next_version }}

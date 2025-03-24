@@ -20,7 +20,7 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
           scope: '@workfront'
-      - run: npm ci
+      - run: npm ci --no-fund --no-audit
       - run: npm run build
   test:
     runs-on: ubuntu-latest
@@ -32,7 +32,7 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
           scope: '@workfront'
-      - run: npm ci
+      - run: npm ci --no-fund --no-audit
       - run: npm run test:sources -- --ci
       - uses: codecov/codecov-action@v4
         with:
@@ -49,5 +49,5 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
           scope: '@workfront'
-      - run: npm ci
+      - run: npm ci --no-fund --no-audit
       - run: npm run test:typecheck
